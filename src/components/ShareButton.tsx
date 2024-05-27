@@ -134,7 +134,7 @@ function ShareButton({ onItemClick = () => {} }: ShareButtonProps) {
                 {({ active }) => (
                   <ShareItemLink
                     active={active}
-                    href={`https://twitter.com/intent/tweet?via=enjidev&url=${currentUrl}`}
+                    href={`https://twitter.com/intent/tweet?via=surkailash&url=${currentUrl}`}
                     onClick={handleTwitter}
                   >
                     <TwitterIcon className={clsx('h-4 w-4')} />

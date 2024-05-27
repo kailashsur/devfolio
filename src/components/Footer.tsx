@@ -13,7 +13,7 @@ import dayjs from '@/utils/dayjs';
 function LastUpdate() {
   return (
     <a
-      href="https://github.com/kailashsur"
+      href="https://github.com/kailashsur/devfolio"
       target="_blank"
       rel="noreferrer nofollow"
       className={clsx('hover:underline')}
@@ -218,13 +218,8 @@ function Footer() {
                   title="This Site"
                   links={[
                     {
-                      title: 'Design Concept',
-                      href: 'https://www.figma.com/community/file/1176392613303840973',
-                      isInternal: false,
-                    },
-                    {
                       title: 'Source Code',
-                      href: 'https://github.com/enjidev/enji.dev',
+                      href: 'https://github.com/kailashsur/devfolio',
                       isInternal: false,
                     },
                     {
@@ -244,7 +239,7 @@ function Footer() {
           )}
         >
           <div className={clsx('font-semibold')}>
-            &copy; {dayjs().format('YYYY')}, Enji Kusnadi
+            &copy; {dayjs().format('YYYY')}, Kailash Sur
           </div>
           <div className={clsx('text-slate-500', 'dark:text-slate-400')}>
             <LastUpdate />

@@ -21,7 +21,7 @@ function Head({
 
   const htmlTitle = overrideTitle
     ? title
-    : `${title} — Enji · Front-End Developer`;
+    : `${title} — Kailash · Full Stack Web Developer`;
 
   return (
     <NextHead>
@@ -40,8 +40,8 @@ function Head({
 
       {/* twitter card */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@enjidev" />
-      <meta name="twitter:creator" content="@enjidev" />
+      <meta name="twitter:site" content="@surkailash" />
+      <meta name="twitter:creator" content="@surkailash" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
