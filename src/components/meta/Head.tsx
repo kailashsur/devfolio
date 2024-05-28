@@ -47,6 +47,9 @@ function Head({
       <meta name="twitter:image" content={ogImage} />
       <meta name="twitter:image:alt" content={`Image with "${title}" text.`} />
 
+      {/* Google search console meta tag for verification */}
+      <meta name="google-site-verification" content="3AUqLkaoS5pRSGC1dDM378S1nEQh5nimfeVvF_rEOYc" />
+
       {/* structured data */}
       {structuredData && (
         <script type="application/ld+json">{structuredData}</script>
