@@ -12,7 +12,7 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   rules: {
-    '@next/next/no-html-link-for-pages': ['error', 'apps/enji.dev/src/pages/'],
+    '@next/next/no-html-link-for-pages': ['error', '../src/pages/'],
     'no-underscore-dangle': ['error', { allow: ['_count', '_sum'] }],
     'import/extensions': 'off',
     'import/order': 'off',
