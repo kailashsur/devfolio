@@ -34,25 +34,25 @@ function Shortcuts() {
 
   useEffect(() => {
     if (toastRef.current) {
-      toast.remove(toastRef.current.id);
+      // toast.remove(toastRef.current.id);
     }
-    if (focusMode) {
-      toastRef.current = toast.custom((t) => (
-        <Toast
-          title={focusToast.title.replace('{STATUS}', 'On')}
-          message={focusToast.message}
-          t={t}
-        />
-      ));
-    } else {
-      toastRef.current = toast.custom((t) => (
-        <Toast
-          title={focusToast.title.replace('{STATUS}', 'Off')}
-          message={focusToast.message}
-          t={t}
-        />
-      ));
-    }
+    // if (focusMode) {
+    //   toastRef.current = toast.custom((t) => (
+    //     <Toast
+    //       title={focusToast.title.replace('{STATUS}', 'On')}
+    //       message={focusToast.message}
+    //       t={t}
+    //     />
+    //   ));
+    // } else {
+    //   toastRef.current = toast.custom((t) => (
+    //     <Toast
+    //       title={focusToast.title.replace('{STATUS}', 'Off')}
+    //       message={focusToast.message}
+    //       t={t}
+    //     />
+    //   ));
+    // }
   }, [focusMode]);
 
   return null;

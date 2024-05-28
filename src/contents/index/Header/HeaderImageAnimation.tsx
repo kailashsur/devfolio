@@ -3,7 +3,7 @@ import { m } from 'framer-motion';
 
 const animation = {
   hide: { pathLength: 0.3 },
-  show: (i) => {
+  show: (i : number) => {
     const delay = 0.6 + i * 0.1;
     return {
       pathLength: 1,

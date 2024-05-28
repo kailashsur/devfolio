@@ -16,6 +16,10 @@ function Callout({
     title: string;
     icon: ReactElement;
     modifier: string;
+  } = {
+    title: 'Note',
+    icon: <NoteIcon />,
+    modifier: '',
   };
 
   switch (variant) {

@@ -25,7 +25,7 @@ interface NewPostsProps {
 function NewPosts({ onItemClick = () => {} }: NewPostsProps) {
   const { data } = useNewPosts();
 
-  if (data.length === 0) return null;
+  if (data?.length === 0) return null;
 
   return (
     <div className={clsx('flex flex-col gap-4')}>

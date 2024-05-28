@@ -16,7 +16,7 @@ function CountUp({ from, to }: CountUpProps) {
       duration: 1.4,
       ease: 'easeOut',
       onUpdate(value) {
-        node.textContent = value.toFixed(0);
+        // node.textContent = value.toFixed(0);
       },
     });
 

@@ -22,7 +22,11 @@ export function QuickView({ href, children }: QuickViewProps) {
       `width=${width},height=${height},left=${left},top=${top}`
     );
 
-    newWindow.focus();
+    // newWindow.focus();
+    if (newWindow !== null) {
+      newWindow.focus();
+    }
+    
   };
 
   return (

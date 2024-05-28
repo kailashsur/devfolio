@@ -50,11 +50,24 @@ function Code({
   const codeRef = useRef<HTMLPreElement>(null);
   const [isCopied, setCopied] = useState<boolean>(false);
 
+  // const copyToClipboard = async () => {
+  //   try {
+  //     const content = codeRef.current.textContent || '';
+  //     await navigator.clipboard.writeText(content);
+
+  //     if (!isCopied) {
+  //       setCopied(true);
+  //       setTimeout(() => setCopied(false), 1000);
+  //     }
+  //   } catch (err) {
+  //     setCopied(false);
+  //   }
+  // };
   const copyToClipboard = async () => {
     try {
-      const content = codeRef.current.textContent || '';
+      const content = codeRef.current?.textContent || ''; // Add optional chaining here
       await navigator.clipboard.writeText(content);
-
+  
       if (!isCopied) {
         setCopied(true);
         setTimeout(() => setCopied(false), 1000);
@@ -63,6 +76,7 @@ function Code({
       setCopied(false);
     }
   };
+  
 
   return (
     <div className={clsx('mdx-code')}>

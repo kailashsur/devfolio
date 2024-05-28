@@ -1,9 +1,6 @@
 import clsx from 'clsx';
-
 import { CheckCircleIcon, XCircleIcon } from '@/components/Icons';
-
 import { formatDate } from '@/helpers/post';
-
 import type { PropsWithChildren, ReactElement } from 'react';
 
 export function Do({ children = null }: PropsWithChildren) {
@@ -123,7 +120,7 @@ export function Item({ children = null }: PropsWithChildren) {
 
 interface ItemsProps {
   date: string;
-  children?: ReactElement<typeof Item> | ReactElement<typeof Item>[];
+  children?: ReactElement<typeof Item> | ReactElement<typeof Item>[] | null;
 }
 
 export function Items({
